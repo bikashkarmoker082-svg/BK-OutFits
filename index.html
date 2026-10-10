@@ -1,1 +1,96 @@
-
+```html
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Future Fashion | Men's Wear</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f5f5f5;color:#222}
+header{background:#111;color:white;padding:22px 15px;text-align:center}
+header h1{margin:0;color:#ffd700;font-size:30px}
+header p{margin:8px 0 0}
+nav{background:#222;padding:13px;text-align:center}
+nav a{color:white;text-decoration:none;margin:0 12px}
+.hero{background:linear-gradient(120deg,#111,#555);color:white;text-align:center;padding:55px 15px}
+.hero h2{font-size:32px;margin:0 0 12px}
+.btn{display:inline-block;background:#ffd700;color:#111;padding:12px 22px;border-radius:5px;text-decoration:none;font-weight:bold;margin-top:12px}
+h2.section{text-align:center;margin:30px 0 20px}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;padding:15px;max-width:1000px;margin:auto}
+.card{background:white;border-radius:10px;overflow:hidden;box-shadow:0 2px 8px #ddd;text-align:center;padding-bottom:18px}
+.card img{width:100%;height:230px;object-fit:cover}
+.card h3{margin:12px 0 6px}
+.price{color:#c00;font-weight:bold;font-size:20px}
+.order{background:white;max-width:600px;margin:30px auto;padding:22px;border-radius:10px}
+input,select,textarea{width:100%;padding:12px;margin:7px 0 14px;border:1px solid #ccc;border-radius:5px;font-size:16px}
+button{background:#111;color:white;padding:13px;border:0;border-radius:5px;width:100%;font-size:17px;cursor:pointer}
+footer{background:#111;color:white;text-align:center;padding:22px;margin-top:30px}
+</style>
+</head>
+<body>
+<header>
+<h1>Future Fashion</h1>
+<p>ছেলেদের আধুনিক পোশাকের বিশ্বস্ত ঠিকানা</p>
+</header>
+<nav>
+<a href="#home">হোম</a>
+<a href="#products">পোশাক</a>
+<a href="#order">অর্ডার</a>
+</nav>
+<section class="hero" id="home">
+<h2>Style That Defines You</h2>
+<p>আপনার পছন্দের পোশাক কিনুন সাশ্রয়ী দামে</p>
+<a class="btn" href="#products">পোশাক দেখুন</a>
+</section>
+<h2 class="section" id="products">আমাদের পোশাক</h2>
+<section class="products">
+<div class="card">
+<img src="https://placehold.co/400x400?text=Casual+Shirt" alt="ক্যাজুয়াল শার্ট">
+<h3>ক্যাজুয়াল শার্ট</h3>
+<p class="price">৳ ৫৫০</p>
+<a class="btn" href="#order" onclick="document.getElementById('product').value='ক্যাজুয়াল শার্ট - ৳550'">অর্ডার করুন</a>
+</div>
+<div class="card">
+<img src="https://placehold.co/400x400?text=T-Shirt" alt="টি-শার্ট">
+<h3>স্টাইলিশ টি-শার্ট</h3>
+<p class="price">৳ ৩৫০</p>
+<a class="btn" href="#order" onclick="document.getElementById('product').value='টি-শার্ট - ৳350'">অর্ডার করুন</a>
+</div>
+<div class="card">
+<img src="https://placehold.co/400x400?text=Jeans" alt="জিন্স প্যান্ট">
+<h3>জিন্স প্যান্ট</h3>
+<p class="price">৳ ৮৫০</p>
+<a class="btn" href="#order" onclick="document.getElementById('product').value='জিন্স প্যান্ট - ৳850'">অর্ডার করুন</a>
+</div>
+</section>
+<h2 class="section" id="order">অর্ডার ফর্ম</h2>
+<form class="order" action="https://formsubmit.co/your-email@example.com" method="POST">
+<label>আপনার নাম</label>
+<input type="text" name="name" placeholder="সম্পূর্ণ নাম লিখুন" required>
+<label>মোবাইল নম্বর</label>
+<input type="tel" name="phone" placeholder="01XXXXXXXXX" required>
+<label>পোশাক নির্বাচন করুন</label>
+<select id="product" name="product" required>
+<option value="">পোশাক বেছে নিন</option>
+<option>ক্যাজুয়াল শার্ট - ৳550</option>
+<option>টি-শার্ট - ৳350</option>
+<option>জিন্স প্যান্ট - ৳850</option>
+</select>
+<label>সাইজ</label>
+<select name="size" required>
+<option value="">সাইজ নির্বাচন করুন</option>
+<option>M</option><option>L</option><option>XL</option><option>XXL</option>
+</select>
+<label>সম্পূর্ণ ঠিকানা</label>
+<textarea name="address" placeholder="আপনার ঠিকানা লিখুন" required></textarea>
+<button type="submit">অর্ডার জমা দিন</button>
+</form>
+<footer>
+<h3>Future Fashion</h3>
+<p>আপনার স্টাইল, আপনার পছন্দ</p>
+<p>© 2026 Future Fashion</p>
+</footer>
+</body>
+</html>
+```
